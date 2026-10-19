@@ -64,7 +64,7 @@ sponsorForm.addEventListener("submit", function (event) {
 
     if (years > 2) {
         total = total * 0.8;
-        discountText = "20% alennus yli 2 vuodesta";
+        discountText = "20% alennus yli 2 vuodesta.";
     }
     if (years >= 5) {
         total = total - 5;
