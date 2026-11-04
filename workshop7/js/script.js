@@ -81,7 +81,7 @@ const loadWeatherBtn = document.getElementById("loadWeather");
 const weatherData = document.getElementById("weatherdata");
 
 loadWeatherBtn.addEventListener("click", function () {
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=Helsinki&units=metric&mode=json&appid=5bf8cc9d4a4611800c4a225c2ac61e35")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=Helsinki&units=metric&mode=json&appid=YOUR_API_KEY")
     .then(response => response.json())
     .then(data => {
         weatherData.innerHTML = 
@@ -100,7 +100,7 @@ const citySelect = document.getElementById("city");
 function getWeather(city) {
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" +
         city + 
-        "&units=metric&mode=json&appid=5bf8cc9d4a4611800c4a225c2ac61e35"
+        "&units=metric&mode=json&appid=YOUR_API_KEY"
     )
     .then(response => response.json())
     .then(data => {
